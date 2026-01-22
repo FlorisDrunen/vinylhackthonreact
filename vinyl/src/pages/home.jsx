@@ -1,25 +1,24 @@
 import React from 'react'
-import '../styles/home.css'
 
 const Home = () => {
     const newsItems = [
         {
             id: 1,
-            naam: "Nieuws naam",
-            tekst: "Nieuws text",
-            foto: "https://via.placeholder.com/200x200?text=Nieuws+foto"
+            naam: "Welcome to Vinyl Culture",
+            tekst: "Discover the timeless charm of vinyl records and join our community of passionate collectors and music enthusiasts.",
+            gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
         },
         {
             id: 2,
-            naam: "Nieuws naam",
-            tekst: "Nieuws text",
-            foto: "https://via.placeholder.com/200x200?text=Nieuws+foto"
+            naam: "Premium Sound Quality",
+            tekst: "Experience music the way it was meant to be heard. Vinyl offers warmth and authenticity that digital cannot replicate.",
+            gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
         },
         {
             id: 3,
-            naam: "Nieuws naam",
-            tekst: "Nieuws text",
-            foto: "https://via.placeholder.com/200x200?text=Nieuws+foto"
+            naam: "Curated Collections",
+            tekst: "Browse through our hand-picked selection of rare and classic albums from decades past and present.",
+            gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
         }
     ]
 
@@ -29,10 +28,9 @@ const Home = () => {
             <header className='header'>
                 <nav className='navbar'>
                     <ul className='nav-links'>
-                        <li><a href='#home' className='active'>Home</a></li>
-                        <li><a href='#contactus'>Contactus</a></li>
-                        <li><a href='#diensten'>Diensten</a></li>
-                        <li><a href='#shop'>Shop</a></li>
+                        <li><a href='/' className='active'>Home</a></li>
+                        <li><a href='/posts'>Posts</a></li>
+                        <li><a href='/shop'>Shop</a></li>
                         <li><a href='#login' className='login-btn'>Login</a></li>
                     </ul>
                 </nav>
@@ -48,8 +46,7 @@ const Home = () => {
                                     <h3 className='news-title'>{item.naam}</h3>
                                     <p className='news-text'>{item.tekst}</p>
                                 </div>
-                                <div className='news-image'>
-                                    <img src={item.foto} alt={item.naam} />
+                                <div className='news-image' style={{ background: item.gradient }}>
                                 </div>
                             </article>
                         ))}
