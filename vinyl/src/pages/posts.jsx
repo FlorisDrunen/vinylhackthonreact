@@ -56,7 +56,6 @@ const Posts = () => {
             <li><a href='/'>Home</a></li>
             <li><a href='/posts' className='active'>Posts</a></li>
             <li><a href='/shop'>shop</a></li>
-            <li><a href='#login' className='login-btn'>Login</a></li>
           </ul>
         </nav>
       </header>

@@ -84,7 +84,6 @@ const Shop = () => {
             <li><a href='/'>Home</a></li>
             <li><a href='/posts'>Posts</a></li>
             <li><a href='/shop' className='active'>Shop</a></li>
-            <li><a href='#login' className='login-btn'>Login</a></li>
           </ul>
         </nav>
       </header>
