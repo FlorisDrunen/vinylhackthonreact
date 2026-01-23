@@ -161,6 +161,7 @@
 }
 
 .posts-filter {
+    margin-top: 57px;
     background: white;
     padding: 25px;
     padding-right: 50px;
@@ -314,6 +315,7 @@
 }
 
 .shop-filter {
+    margin-top: 57px;
     background: white;
     padding: 25px;
     padding-right: 50px;

@@ -55,7 +55,7 @@ const Home = () => {
 
             {/* Footer */}
             <footer className='footer'>
-                <p>Footer met links en contact info</p>
+                <p>© 2025 Vinyl Records Community. All rights reserved.</p>
             </footer>
         </div>
     )
